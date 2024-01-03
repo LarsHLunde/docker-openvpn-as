@@ -9,6 +9,7 @@ docker build -t openvpn-as .
 docker run -it \
   -p 943:943 \
   -p 443:443 \
+  -p 1194:1194 \
   --device=/dev/net/tun \
   --cap-add=NET_ADMIN \
   --name openvpn-as \
