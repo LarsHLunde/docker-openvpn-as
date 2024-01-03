@@ -3,6 +3,7 @@
 FILE=/firstrun
 if test -f "$FILE"; then
     rm -f /firstrun
+    echo "Please write DELETE, the is no config installed: "
     /usr/local/openvpn_as/bin/ovpn-init
 
     echo "Docker OpenVPN AS has been installed"
