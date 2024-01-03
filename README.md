@@ -10,7 +10,7 @@ docker run -t \
   -p 943:943 \
   -p 443:443 \
   --device=/dev/net/tun \
-  --cap-add=NET_ADMIN\
+  --cap-add=NET_ADMIN \
   --name openvpn-as \
   --restart unless-stopped \
   openvpn-as
