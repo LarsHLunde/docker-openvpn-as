@@ -11,6 +11,9 @@ if test -f "$FILE"; then
     exit 0
 fi
 
+/usr/local/openvpn_as/scripts/openvpnas
+sleep 5
+
 i=5
 
 until [ $i -lt 5 ]
