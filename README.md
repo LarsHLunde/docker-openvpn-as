@@ -14,4 +14,5 @@ docker run -it \
   --name openvpn-as \
   --restart unless-stopped \
   openvpn-as
+docker start openvpn-as
 ```
