@@ -10,4 +10,5 @@ RUN touch /firstrun
 ADD init.sh /
 EXPOSE 443/tcp
 EXPOSE 943/tcp
+EXPOSE 1194/udp
 ENTRYPOINT ["/bin/bash", "/init.sh"]
