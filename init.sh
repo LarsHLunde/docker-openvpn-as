@@ -13,7 +13,7 @@ if test -f "$FILE"; then
 fi
 
 /usr/local/openvpn_as/scripts/openvpnas
-sleep 5
+sleep 15
 
 i=5
 
