@@ -6,5 +6,8 @@ RUN echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/as-repository.asc] ht
 RUN apt-get update
 RUN apt-get install -y openvpn-as
 RUN apt-get install -y systemctl
+RUN touch /firstrun
 ADD init.sh /
+EXPOSE 443/tcp
+EXPOSE 943/tcp
 ENTRYPOINT ["/bin/bash", "/init.sh"]
