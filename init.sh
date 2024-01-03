@@ -11,4 +11,11 @@ if test -f "$FILE"; then
     exit 0
 fi
 
-sleep 999
+i=5
+
+until [ $i -lt 5 ]
+do
+  sleep 5
+  i=0
+  i=$(($i+$(ps -ef | grep "ovpn" | grep -v grep | wc -l)))
+done
