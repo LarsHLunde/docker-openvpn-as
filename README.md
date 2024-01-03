@@ -17,3 +17,6 @@ docker run -it \
   openvpn-as
 docker start openvpn-as
 ```
+
+Remember to fix the IP/Address in the webui:  
+![image](https://github.com/LarsHLunde/docker-openvpn-as/assets/5747758/a6bd3933-e97b-4f69-8be7-7eb8de8f71eb)
