@@ -1,6 +1,5 @@
 # docker-openvpn-as
-Dockerizied OpenVPN AS install   
-Now with ARM Support!
+Dockerizied OpenVPN AS install 
 
 ## How to install
 ```
