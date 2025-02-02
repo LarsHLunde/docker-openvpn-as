@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 RUN apt-get update
 RUN apt-get install -y ca-certificates wget net-tools gnupg
 RUN wget https://as-repository.openvpn.net/as-repo-public.asc -qO /etc/apt/trusted.gpg.d/as-repository.asc
-RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/trusted.gpg.d/as-repository.asc] http://as-repository.openvpn.net/as/ubuntu noble main">/etc/apt/sources.list.d/openvpn-as-repo.list
+RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/trusted.gpg.d/as-repository.asc] http://as-repository.openvpn.net/as/ubuntu jammy main">/etc/apt/sources.list.d/openvpn-as-repo.list
 RUN apt-get update
 RUN apt-get install -y openvpn-as
 RUN apt-get install -y systemctl
