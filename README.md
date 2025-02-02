@@ -3,7 +3,7 @@ Dockerizied OpenVPN AS install
 
 ## How to install
 ```
-git clone https://github.com/LarsHLunde/docker-openvpn-as.git
+git clone -b dev https://github.com/LarsHLunde/docker-openvpn-as.git
 cd docker-openvpn-as
 docker build -t openvpn-as .
 docker run -it \
