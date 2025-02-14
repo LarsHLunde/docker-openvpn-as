@@ -21,3 +21,13 @@ docker start openvpn-as
 Remember to fix the IP/Address in the webui:  
 
 ![image](https://github.com/LarsHLunde/docker-openvpn-as/assets/5747758/a1dc1a19-3df1-4188-a5e9-2d1004153974)
+
+## Nginx reverse proxy
+```  
+        location / {
+                proxy_pass https://localhost:943;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+```  
